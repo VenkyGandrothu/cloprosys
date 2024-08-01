@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/cloprosys/static/css/main.9a2c1082.css",
+    "main.js": "/cloprosys/static/js/main.8491b9f3.js",
+    "static/js/453.d432340c.chunk.js": "/cloprosys/static/js/453.d432340c.chunk.js",
+    "static/media/img8.jpg": "/cloprosys/static/media/img8.35a327fdc0cf05214506.jpg",
+    "static/media/img3.jpg": "/cloprosys/static/media/img3.36e96c120ed61c2dd31e.jpg",
+    "static/media/img2.jpg": "/cloprosys/static/media/img2.38e84aff72217c5e6eca.jpg",
+    "static/media/img9.jpg": "/cloprosys/static/media/img9.c1c3846cf846acc58491.jpg",
+    "static/media/c2.jpg": "/cloprosys/static/media/c2.03a50923b86b1f7fb99a.jpg",
+    "static/media/Ai.jpg": "/cloprosys/static/media/Ai.bc9236f30bf42f7ed75a.jpg",
+    "static/media/studentImages.jpg": "/cloprosys/static/media/studentImages.8e8211e3c28e7b9ecc50.jpg",
+    "static/media/img6.jpg": "/cloprosys/static/media/img6.ef28596da3c567222853.jpg",
+    "static/media/Business img.jpg": "/cloprosys/static/media/Business img.4b764ed14ff3a383abd6.jpg",
+    "static/media/laptop.jpg": "/cloprosys/static/media/laptop.4f92fe85563baf9f34c3.jpg",
+    "static/media/img5.jpg": "/cloprosys/static/media/img5.b365db27e1494f0706af.jpg",
+    "static/media/img7.jpg": "/cloprosys/static/media/img7.11580c8fd76c9df01f90.jpg",
+    "static/media/Weekend.jpg": "/cloprosys/static/media/Weekend.cedbbeab6bac83594c56.jpg",
+    "static/media/realtaks.jpg": "/cloprosys/static/media/realtaks.3b0d5cf193c8702dd095.jpg",
+    "static/media/projects.png": "/cloprosys/static/media/projects.39b56662f902d72fa8e0.png",
+    "static/media/img1.jpg": "/cloprosys/static/media/img1.6eb7de8150607952cfa4.jpg",
+    "static/media/about.jpg": "/cloprosys/static/media/about.b3a6d38ef133877fbb08.jpg",
+    "static/media/cdiscuss.jpg": "/cloprosys/static/media/cdiscuss.f7a530b104e073b171a9.jpg",
+    "static/media/resumeprep.png": "/cloprosys/static/media/resumeprep.1aa1e824b1abe4b2774a.png",
+    "static/media/cshakehand.jpg": "/cloprosys/static/media/cshakehand.14c87af3c3577a5d17c6.jpg",
+    "static/media/Mocktest.jpg": "/cloprosys/static/media/Mocktest.dd6c269c98a74e50ef8f.jpg",
+    "static/media/x.png": "/cloprosys/static/media/x.ab1bf298218684bb5b1e.png",
+    "static/media/jog.png": "/cloprosys/static/media/jog.65db75ab6b9ca666532b.png",
+    "static/media/aws.png": "/cloprosys/static/media/aws.850296a094250f4a242e.png",
+    "static/media/oracle.png": "/cloprosys/static/media/oracle.b3fc62f2e70ddf24f9ae.png",
+    "static/media/salesforce.png": "/cloprosys/static/media/salesforce.059bf3817c85b99dcad7.png",
+    "static/media/powerbi.jpg": "/cloprosys/static/media/powerbi.a4be4a9b96738b530c78.jpg",
+    "static/media/webdev.jpg": "/cloprosys/static/media/webdev.ec7582c99af0426b8f3e.jpg",
+    "index.html": "/cloprosys/index.html",
+    "main.9a2c1082.css.map": "/cloprosys/static/css/main.9a2c1082.css.map",
+    "main.8491b9f3.js.map": "/cloprosys/static/js/main.8491b9f3.js.map",
+    "453.d432340c.chunk.js.map": "/cloprosys/static/js/453.d432340c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a2c1082.css",
+    "static/js/main.8491b9f3.js"
+  ]
+}
