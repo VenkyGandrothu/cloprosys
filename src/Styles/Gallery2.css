@@ -1,0 +1,61 @@
+.Gallerycontainer {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.headingcontainer{
+    display: flex;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 325px;
+}
+
+
+
+.image-grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+.homebtn{
+    margin:50px 30px;
+}
+
+.homebtn button {
+    background-color: #4b2e77; /* Primary color */
+    color: #fff;
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    color: #fff;
+    padding-right: 10px; /* Adjusted padding */
+}

@@ -1,0 +1,64 @@
+/* src/components/Footer.css */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family:"Poppins", sans-serif;
+
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .footer-section h3, .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p, .footer-section a {
+    margin-bottom: 10px;
+    color: #bbb;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}

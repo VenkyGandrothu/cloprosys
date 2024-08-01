@@ -1,0 +1,38 @@
+/* src/Styles/AboutUs.css */
+.about-us-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family:"Poppins", sans-serif;
+  }
+
+  .about-us-container img{
+    width: 500px;
+  }
+  
+  .about-us-container h2 {
+    font-size: 35px;
+    padding-left: 150px;
+    color: #4b2e77;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .about-us-container p{
+  color: black;
+  font-size: 14px;
+}
+
+.missioncon{
+  display: flex;
+  padding: 120px 120px;
+}
+
+.aboutdes{
+  display: flex;
+  padding: 0px 120px;
+}
+
+span{
+  color: black;
+}
