@@ -6,10 +6,10 @@ import Gallery2 from "./Pages/Gallery2";
 
 function App() {
   return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <Routes>
        <Route path="/" element={<Home/>}/>
-        <Route path="/cloprosys" element={<Home/>}/>
+        {/* <Route path="/cloprosys" element={<Home/>}/> */}
         <Route path="/home" element={<Home/>}/>
         <Route path="/gallery2" element={<Gallery2/>}/>
      </Routes>
