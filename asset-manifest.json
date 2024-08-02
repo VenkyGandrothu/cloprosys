@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cloprosys/static/css/main.9a2c1082.css",
+    "main.css": "/cloprosys/static/css/main.092a692a.css",
     "main.js": "/cloprosys/static/js/main.1478864d.js",
     "static/js/453.d432340c.chunk.js": "/cloprosys/static/js/453.d432340c.chunk.js",
     "static/media/img8.jpg": "/cloprosys/static/media/img8.35a327fdc0cf05214506.jpg",
@@ -32,12 +32,12 @@
     "static/media/powerbi.jpg": "/cloprosys/static/media/powerbi.a4be4a9b96738b530c78.jpg",
     "static/media/webdev.jpg": "/cloprosys/static/media/webdev.ec7582c99af0426b8f3e.jpg",
     "index.html": "/cloprosys/index.html",
-    "main.9a2c1082.css.map": "/cloprosys/static/css/main.9a2c1082.css.map",
+    "main.092a692a.css.map": "/cloprosys/static/css/main.092a692a.css.map",
     "main.1478864d.js.map": "/cloprosys/static/js/main.1478864d.js.map",
     "453.d432340c.chunk.js.map": "/cloprosys/static/js/453.d432340c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a2c1082.css",
+    "static/css/main.092a692a.css",
     "static/js/main.1478864d.js"
   ]
 }
