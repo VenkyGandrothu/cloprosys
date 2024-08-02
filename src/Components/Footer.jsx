@@ -26,8 +26,8 @@ function Footer() {
         </div>
         <div className="footer-section contact">
           <h4>Contact Us</h4>
-          <p>Email: cloprosys@gmail.com</p>
-          <p>Phone: +91 7489020484</p>
+          <p>Email: info@cloprosys.com</p>
+          <p>Phone: +91 7670970618</p>
         </div>
         <div className="footer-section social">
           <h4>Follow Us</h4>
