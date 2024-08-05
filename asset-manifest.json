@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ced7dd1.css",
-    "main.js": "/static/js/main.eade7f82.js",
+    "main.css": "/static/css/main.69a6285d.css",
+    "main.js": "/static/js/main.6f3d5ffa.js",
     "static/js/453.d432340c.chunk.js": "/static/js/453.d432340c.chunk.js",
     "static/media/img8.jpg": "/static/media/img8.35a327fdc0cf05214506.jpg",
     "static/media/img3.jpg": "/static/media/img3.36e96c120ed61c2dd31e.jpg",
@@ -9,14 +9,15 @@
     "static/media/img9.jpg": "/static/media/img9.c1c3846cf846acc58491.jpg",
     "static/media/c2.jpg": "/static/media/c2.03a50923b86b1f7fb99a.jpg",
     "static/media/Ai.jpg": "/static/media/Ai.bc9236f30bf42f7ed75a.jpg",
-    "static/media/studentImages.jpg": "/static/media/studentImages.8e8211e3c28e7b9ecc50.jpg",
     "static/media/img6.jpg": "/static/media/img6.ef28596da3c567222853.jpg",
     "static/media/Business img.jpg": "/static/media/Business img.4b764ed14ff3a383abd6.jpg",
     "static/media/laptop.jpg": "/static/media/laptop.4f92fe85563baf9f34c3.jpg",
     "static/media/img5.jpg": "/static/media/img5.b365db27e1494f0706af.jpg",
     "static/media/img7.jpg": "/static/media/img7.11580c8fd76c9df01f90.jpg",
+    "static/media/insta.png": "/static/media/insta.7975ba08aaa15327b255.png",
     "static/media/Weekend.jpg": "/static/media/Weekend.cedbbeab6bac83594c56.jpg",
     "static/media/realtaks.jpg": "/static/media/realtaks.3b0d5cf193c8702dd095.jpg",
+    "static/media/PLC.jpg": "/static/media/PLC.8d5eecc3bfc4d7fb6a2d.jpg",
     "static/media/projects.png": "/static/media/projects.39b56662f902d72fa8e0.png",
     "static/media/img1.jpg": "/static/media/img1.6eb7de8150607952cfa4.jpg",
     "static/media/about.jpg": "/static/media/about.b3a6d38ef133877fbb08.jpg",
@@ -24,20 +25,21 @@
     "static/media/resumeprep.png": "/static/media/resumeprep.1aa1e824b1abe4b2774a.png",
     "static/media/cshakehand.jpg": "/static/media/cshakehand.14c87af3c3577a5d17c6.jpg",
     "static/media/Mocktest.jpg": "/static/media/Mocktest.dd6c269c98a74e50ef8f.jpg",
-    "static/media/x.png": "/static/media/x.ab1bf298218684bb5b1e.png",
     "static/media/jog.png": "/static/media/jog.65db75ab6b9ca666532b.png",
     "static/media/aws.png": "/static/media/aws.850296a094250f4a242e.png",
     "static/media/oracle.png": "/static/media/oracle.b3fc62f2e70ddf24f9ae.png",
     "static/media/salesforce.png": "/static/media/salesforce.059bf3817c85b99dcad7.png",
+    "static/media/x.png": "/static/media/x.d74d7cef2155f5a3d688.png",
     "static/media/powerbi.jpg": "/static/media/powerbi.a4be4a9b96738b530c78.jpg",
     "static/media/webdev.jpg": "/static/media/webdev.ec7582c99af0426b8f3e.jpg",
+    "static/media/fb.png": "/static/media/fb.3cb08c9d44e0707a25e4.png",
     "index.html": "/index.html",
-    "main.5ced7dd1.css.map": "/static/css/main.5ced7dd1.css.map",
-    "main.eade7f82.js.map": "/static/js/main.eade7f82.js.map",
+    "main.69a6285d.css.map": "/static/css/main.69a6285d.css.map",
+    "main.6f3d5ffa.js.map": "/static/js/main.6f3d5ffa.js.map",
     "453.d432340c.chunk.js.map": "/static/js/453.d432340c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ced7dd1.css",
-    "static/js/main.eade7f82.js"
+    "static/css/main.69a6285d.css",
+    "static/js/main.6f3d5ffa.js"
   ]
 }
