@@ -2,16 +2,20 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     position: relative;
+    padding: 0 20px;
 }
 
 .headingcontainer{
     display: flex;
+    flex-direction: column; /* Stack heading and button vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px;
 }
 
 .heading {
     font-weight: 700;
     font-size: 30px;
-    margin: 0px 325px;
+    margin: 0px;
 }
 
 
@@ -40,7 +44,7 @@
     transform: scale(1.05);
 }
 .homebtn{
-    margin:50px 30px;
+    margin:20px 0;
 }
 
 .homebtn button {
@@ -53,9 +57,45 @@
     border: none;
     outline: none;
     cursor: pointer;
+    align-items: center; 
 }
 
 .material-symbols-outlined {
     color: #fff;
     padding-right: 10px; /* Adjusted padding */
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px; /* Smaller font size on mobile */
+    }
+    
+    .gallery-img {
+        height: 150px; /* Reduce height for smaller screens */
+    }
+    
+    .homebtn button {
+        font-size: 12px;
+        padding: 8px 16px; /* Smaller font size for buttons on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 18px; /* Further reduce font size on very small screens */
+        margin: 0 10px; /* Add some margin to prevent edge-to-edge text */
+    }
+
+    .gallery-img {
+        height: 150px; 
+        width: 100%;/* Further reduce height for very small screens */
+    }
+
+    .homebtn {
+        margin: 20px 0; /* Add margin to ensure button is spaced well from other elements */
+    }
+
+    .homebtn button {
+        padding: 10px 20px; /* Adjust padding to better fit small screens */
+        font-size: 14px; /* Increase font size slightly for readability */
+    }
 }

@@ -1,10 +1,9 @@
-// src/components/Footer.js
 import React from 'react';
-import '../Styles/Footer.css'
-import instagramIcon from '../Images/insta.png'
-import facebook from '../Images/fb.png'
-import linkedinIcon from '../Images/linkedin.png'
-import twitterIcon from '../Images/x.png'
+import '../Styles/Footer.css';
+import instagramIcon from '../Images/insta.png';
+import facebook from '../Images/fb.png';
+import linkedinIcon from '../Images/linkedin.png';
+import twitterIcon from '../Images/x.png';
 
 function Footer() {
   return (
@@ -24,11 +23,6 @@ function Footer() {
             <li><a href="#contactus">Contact Us</a></li>
           </ul>
         </div>
-        <div className="footer-section contact">
-          <h4>Contact Us</h4>
-          <p>Email: info@cloprosys.com</p>
-          <p>Phone: +91 7670970618</p>
-        </div>
         <div className="footer-section social">
           <h4>Follow Us</h4>
           <div className="social-links">
@@ -45,6 +39,11 @@ function Footer() {
               <img src={instagramIcon} alt="Instagram" />
             </a>
           </div>
+        </div>
+        <div className="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>Email: info@cloprosys.com</p>
+          <p>Phone: +91 7670970618</p>
         </div>
       </div>
       <div className="footer-bottom">

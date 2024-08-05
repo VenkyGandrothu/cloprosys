@@ -21,7 +21,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     background: #fff;
-    margin: 20px;
+    margin: 0px;
     animation: fadeIn 1s ease-out;
     cursor: pointer;
   }
@@ -60,4 +60,40 @@
       opacity: 1;
     }
   }
-  
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .course-card {
+    width: 100%; /* Ensure cards take full width on small screens */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  .course-image {
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .course-title {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .course-description {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-container {
+    grid-template-columns: 1fr; /* One card per row on very small screens */
+  }
+
+  .course-image {
+    height: 120px; /* Adjust image height further for very small screens */
+  }
+
+  .course-title {
+    font-size: 1rem; /* Further adjust font size */
+  }
+
+  .course-description {
+    font-size: 0.8rem; /* Further adjust font size */
+  }
+}

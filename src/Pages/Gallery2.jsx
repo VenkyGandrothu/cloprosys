@@ -29,7 +29,7 @@ function Gallery2() {
     <div className='Gallerycontainer'>
       <div className="headingcontainer">
       <div className="homebtn">
-      <button onClick={home}><span class="material-symbols-outlined">house</span>Back to Home</button>
+      <button onClick={home}>Back to Home</button>
       </div>
       <div className="heading">
       <h1 className='gallery-heading'>Our <span>Gallery</span></h1>

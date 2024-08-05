@@ -1,38 +1,99 @@
-/* src/Styles/AboutUs.css */
+/* Base styles */
 .about-us-container {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    font-family:"Poppins", sans-serif;
+  padding: 20px; /* Reduce padding for smaller screens */
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-us-container img {
+  width: 100%; /* Ensure images are responsive */
+  max-width: 500px; /* Set max-width to prevent images from getting too large */
+  height: auto;
+}
+
+.about-us-container h2 {
+  font-size: 28px; /* Reduce font size for smaller screens */
+  padding-left: 0; /* Remove left padding for smaller screens */
+  color: #4b2e77;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center; /* Center align text on smaller screens */
+}
+
+.about-us-container p {
+  color: black;
+  font-size: 16px; /* Increase font size for readability */
+  text-align: center; /* Center align text on smaller screens */
+}
+
+.missioncon,
+.aboutdes {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center items */
+  padding: 20px; /* Reduce padding for smaller screens */
+}
+
+.missioncon img,
+.aboutdes img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+}
+
+span {
+  color: black;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .about-us-container {
+    padding: 40px; /* Increase padding for larger screens */
   }
 
-  .about-us-container img{
-    width: 500px;
-  }
-  
   .about-us-container h2 {
-    font-size: 35px;
-    padding-left: 150px;
-    color: #4b2e77;
-    font-weight: 700;
-    font-style: normal;
+    font-size: 35px; /* Increase font size for larger screens */
+    padding-left: 150px; /* Restore left padding for larger screens */
+    text-align: left; /* Align text to the left */
   }
 
-  .about-us-container p{
-  color: black;
-  font-size: 14px;
+  .about-us-container p {
+    font-size: 18px; /* Increase font size for readability */
+    text-align: left; /* Align text to the left */
+  }
+
+  .missioncon,
+  .aboutdes {
+    flex-direction: row; /* Arrange items side-by-side on larger screens */
+    align-items: flex-start; /* Align items to the start */
+    padding: 120px; /* Set padding for larger screens */
+  }
+
+  .missioncon img,
+  .aboutdes img {
+    max-width: 500px; /* Limit image size */
+  }
 }
 
-.missioncon{
-  display: flex;
-  padding: 120px 120px;
+.missioncon img{
+  max-width: 300px;
 }
 
-.aboutdes{
-  display: flex;
-  padding: 0px 120px;
-}
+@media (max-width: 576px) {
+  .about-us-container {
+    padding: 10px; /* Further reduce padding for very small screens */
+  }
 
-span{
-  color: black;
+  .about-us-container h2 {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .about-us-container p {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .missioncon,
+  .aboutdes {
+    padding: 10px; /* Reduce padding */
+  }
 }

@@ -1,69 +1,91 @@
-.index-container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)) ,url('../Images/studentImages.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family:"Poppins", sans-serif;
+.index-container {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)); Gradient without image */
+  /* background: url(../Images/PLC.jpg); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+  padding: 0 20px; /* Ensure content does not touch the edges */
+}
+
+
+.index-container h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Responsive font size */
+  line-height: 1.2; 
+}
+
+.explore-button {
+  background-color: #fff; /* Primary color */
+  color: #4b2e77;
+  border: 2px solid #4b2e77;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.explore-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.explore-button:hover::before {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+}
+
+.explore-button:hover {
+  background-color: #4b2e77; /* Darker shade for hover */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.explore-button:active {
+  background-color: #4b2e77; /* Even darker shade for active state */
+  transform: scale(0.95);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .index-container h1 {
+    font-size: 2rem; /* Adjust font size for tablets */
   }
-  
-  .index-container h1{
-    color: #fff;
-    margin: 0;
-  }
-  
-  /* src/Styles/Button.css */
+
   .explore-button {
-    background-color: #fff; /* Primary color */
-    color: #4b2e77;
-    border: 2px solid #4b2e77;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    font-size: 19px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    outline: none;
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size */
   }
-  
-  .explore-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+  .index-container h1 {
+    font-size: 1.5rem; /* Further adjust font size for mobile screens */
   }
-  
-  .explore-button:hover::before {
-    width: 0;
-    height: 0;
-    top: 50%;
-    left: 50%;
+
+  .explore-button {
+    padding: 6px 12px; /* Further adjust padding for mobile screens */
+    font-size: 12px; /* Further adjust font size */
   }
-  
-  .explore-button:hover {
-    background-color: #4b2e77; /* Darker shade for hover */
-    color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-  }
-  
-  .explore-button:active {
-    background-color: #4b2e77; /* Even darker shade for active state */
-    transform: scale(0.95);
-  }
-  
+}
