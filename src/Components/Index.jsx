@@ -1,18 +1,14 @@
 import React from 'react';
-import Typewriter from 'react-typewriter';
-import centerimg from '../Images/PLC.jpg'
 import '../Styles/index.css';
+import centerimg from '../Images/centerimg.jpg'
 
 function Index() {
   return (
     <div className="index-container">
-      <h1>
-        <Typewriter typing={0.5} minDelay={50} maxDelay={100} cursorColor="#fff">
-          Welcome to Cloprosys
-        </Typewriter>
-      </h1>
-      <button className='explore-button'>Explore More</button>
+      <img src={centerimg}alt="" className="center-img"/>
+      <h3> Arise, awake, and stop not <br /> <span>util the goal is reached...</span></h3>
     </div>
+
   );
 }
 

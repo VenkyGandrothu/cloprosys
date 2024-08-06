@@ -21,6 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
+
 }  
 
 
@@ -52,7 +54,6 @@
 .navbar-item .active{
   background-color: #000;
   color: #fff;
-  /* border-bottom: solid 2px black; */
 }
 
 .navbar-item a:hover {
@@ -83,6 +84,10 @@
   right: 20px;
 }
 
+.mobile-heading {
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .navitems {
@@ -93,6 +98,8 @@
       justify-content: space-between;
 
   }
+
+  
 
   .menu-icon {
       display: block;
@@ -124,6 +131,16 @@
       margin: 10px 0;
       width: 100%;
       text-align: center;
+  }
+
+  .mobile-heading {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
   }
 
   .navbar-item a {
@@ -163,7 +180,7 @@
       width: 100px;
   }
   .navitems {
-    margin-left: 300px; /* Add margin to create gap between logo and nav items */
+    margin-right: 50px; /* Add margin to create gap between logo and nav items */
 }
 }
 
@@ -182,8 +199,6 @@
   .logo {
       width: 60px;
   }
-  .navitems {
-    margin-left: 250px; /* Adjust the gap for smaller laptops */
-}
+
 
 }

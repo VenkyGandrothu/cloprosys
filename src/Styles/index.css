@@ -1,91 +1,88 @@
+/* Base styling for the container */
 .index-container {
   width: 100%;
-  min-height: 100vh;
-  /* background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)); Gradient without image */
-  /* background: url(../Images/PLC.jpg); */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box; /* Ensure padding does not affect width */
-  padding: 0 20px; /* Ensure content does not touch the edges */
-}
-
-
-.index-container h1 {
+  box-sizing: border-box;
   margin: 0;
-  font-size: 2.5rem; /* Responsive font size */
-  line-height: 1.2; 
+  padding: 0;/* Light background color */
+  min-height: 80vh; /* Ensure it takes up at least the full viewport height */
+  overflow: hidden; 
 }
 
-.explore-button {
-  background-color: #fff; /* Primary color */
-  color: #4b2e77;
-  border: 2px solid #4b2e77;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  outline: none;
-}
+/* Styling for the heading
+.heading {
+  margin: 0;
+  font-size: 4rem;
+  color: #333;
+  line-height: 1.2;
+} */
 
-.explore-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: rgba(255, 255, 255, 0.2);
-  transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
+.index-container h3{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem; /* Increase font size */
+  color: #333; /* Dark text color for contrast */
+  line-height: 1.4; /* Adjust line height for better readability */
+  margin: 20px 0; /* Add margin for spacing */
+  max-width: 70%; /* Ensure the text does not exceed container width */
 }
-
-.explore-button:hover::before {
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-}
-
-.explore-button:hover {
-  background-color: #4b2e77; /* Darker shade for hover */
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
-}
-
-.explore-button:active {
-  background-color: #4b2e77; /* Even darker shade for active state */
-  transform: scale(0.95);
+.center-img {
+  max-width: 100%; /* Ensure the image scales within the container */
+  height: auto; /* Maintain the image's aspect ratio */
+  max-height: 80vh; /* Limit the image height to 60% of the viewport height */
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-  .index-container h1 {
-    font-size: 2rem; /* Adjust font size for tablets */
+@media (max-width: 1024px) {
+  .index-container {
+    padding: 0 10px; /* Add some padding */
   }
 
-  .explore-button {
-    padding: 8px 16px; /* Adjust padding for smaller screens */
-    font-size: 14px; /* Adjust font size */
+  .index-container h3 {
+    font-size: 2rem; /* Adjust font size for tablets */
+    max-width: 80%; /* Increase width for better readability */
   }
 }
+
+
+@media (max-width: 768px) {
+  .index-container {
+    padding: 0 15px; /* Add some padding */
+  }
+
+  .index-container h3 {
+    font-size: 1.75rem; /* Adjust font size for larger mobile screens */
+    max-width: 85%; /* Increase width for better readability */
+  }
+}
+
 
 @media (max-width: 576px) {
-  .index-container h1 {
-    font-size: 1.5rem; /* Further adjust font size for mobile screens */
+
+  .index-container {
+    padding: 0 5px;
+    /* Adjust height or padding for mobile view */
+    min-height: 50vh; /* Reduce the height to 80% of the viewport height */
+  }
+  .heading {
+    font-size: 1.5rem;
+      /* Further adjust font size for mobile screens */
   }
 
-  .explore-button {
-    padding: 6px 12px; /* Further adjust padding for mobile screens */
-    font-size: 12px; /* Further adjust font size */
+  .index-container h3 {
+    font-size: 1.5rem; /* Adjust font size for mobile screens */
+    margin: 20px 0; /* Reduce margin for mobile screens */
+    display: none; /* Hide the text h3 on mobile screens */
+  }
+
+  .center-img {
+    max-height: 50vh; /* Further reduce image height for mobile screens */
   }
 }
+

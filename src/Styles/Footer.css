@@ -1,6 +1,6 @@
 /* Base styles */
 .footer {
-  background: #333;
+  background: #000;
   color: #fff;
   padding: 20px 0;
   font-family: "Poppins", sans-serif;
@@ -90,7 +90,8 @@
   .footer-content {
     flex-direction: column; /* Stack sections vertically */
     align-items: center;
-    padding: 10px;
+    min-height: 10vh;
+
   }
 
   .footer-section {
@@ -98,11 +99,6 @@
     padding: 10px;
     width: 100%; /* Ensure each section takes full width */
   }
-
-  /* .footer-section h3,
-  .footer-section h4 {
-    font-size: 20px; 
-  } */
 
   .footer-section p {
     font-size: 14px; /* Adjust font size */
@@ -119,10 +115,7 @@
 }
 
 @media (max-width: 480px) {
-  .footer-content {
-    padding: 0 10px; /* Further reduce padding for very small screens */
-  }
-
+  
   .footer-section h3,
   .footer-section h4 {
     font-size: 18px; /* Further adjust font size */

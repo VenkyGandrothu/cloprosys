@@ -57,6 +57,9 @@ function Navbar() {
       <div className='menu-icon' onClick={toggleMenu}>
         <span>&#9776;</span>
       </div>
+      <div className='mobile-heading'>
+        <h4>Clopro<span>sys</span></h4>
+      </div>
     </nav>
   );
 }

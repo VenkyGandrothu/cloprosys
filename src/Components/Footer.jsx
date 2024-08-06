@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section about">
-          <h3>Cloprosys IT Solutions Institute</h3>
+          <h3>Cloprosys IT Solutions</h3>
           <p>Your gateway to mastering cutting-edge technology skills. Join us to advance your career with industry-leading training and resources.</p>
         </div>
         <div className="footer-section links">

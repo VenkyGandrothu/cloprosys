@@ -12,7 +12,7 @@ import Gallery from "../Components/Gallery";
 
 function Home() {
   return (
-    <div className='Home'>
+    <div className='home'>
          <Navbar/>
       <div id="home">
         <Index />
