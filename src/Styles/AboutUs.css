@@ -80,7 +80,7 @@ span {
 }
 
 @media (max-width: 576px) {
-  .about-us-container {
+  .about-us-container { 
     padding: 10px; /* Further reduce padding for very small screens */
   }
 
@@ -105,13 +105,13 @@ span {
   }
 
   .about-us-container h2 {
-    font-size: 32px; /* Adjust font size for laptops */
+    font-size: 28px; /* Adjust font size for laptops */
     padding-left: 100px; /* Adjust padding for laptops */
     text-align: left; /* Align text to the left */
   }
 
   .about-us-container p {
-    font-size: 18px; /* Adjust font size for readability */
+    font-size: 14px; /* Adjust font size for readability */
     text-align: left; /* Align text to the left */
   }
 
