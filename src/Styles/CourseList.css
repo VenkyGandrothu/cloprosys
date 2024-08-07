@@ -60,6 +60,9 @@
       opacity: 1;
     }
   }
+
+
+
   /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .course-card {
@@ -85,12 +88,15 @@
     grid-template-columns: 1fr; /* One card per row on very small screens */
   }
 
+  .course-heading{
+    font-size: 1.5rem;
+  }
   .course-image {
     height: 120px; /* Adjust image height further for very small screens */
   }
 
   .course-title {
-    font-size: 1rem; /* Further adjust font size */
+    font-size: 1.2rem; /* Further adjust font size */
   }
 
   .course-description {

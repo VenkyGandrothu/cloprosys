@@ -14,19 +14,16 @@
   overflow: hidden; 
 }
 
-/* Styling for the heading
-.heading {
-  margin: 0;
-  font-size: 4rem;
-  color: #333;
-  line-height: 1.2;
-} */
+.authorname{
+  font-size: 5px;
+}
+
 
 .index-container h3{
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.5rem; /* Increase font size */
+  font-size: 2.0rem; /* Increase font size */
   color: #333; /* Dark text color for contrast */
   line-height: 1.4; /* Adjust line height for better readability */
   margin: 20px 0; /* Add margin for spacing */

@@ -55,7 +55,7 @@ function CoursesList() {
       ];
   return (
     <div className="courses-list">
-    <h2>Our Featured Courses</h2>
+    <h2 className='course-heading'>Our Featured <span>Courses</span></h2>
     <div className="courses-container">
       {courses.map((course, index) => (
         <div key={index} className="course-card">

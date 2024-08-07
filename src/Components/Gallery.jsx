@@ -1,9 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import ins1 from '../Images/cdiscuss.jpg'
-import ins2 from '../Images/cshakehand.jpg'
-import ins3 from '../Images/c2.jpg'
-import ins4 from '../Images/laptop.jpg'
+import ins1 from '../Images/inp1.jpg'
+import ins2 from '../Images/inp5.jpg'
+import ins3 from '../Images/inp6.jpg'
+import ins4 from '../Images/inp4.jpg'
 import '../Styles/Gallery.css'
 
 

@@ -91,6 +91,7 @@
   @media (max-width: 480px) {
     .contact-container {
       padding: 10px;
+      font-size: 12px;
     }
   
     .form-group {

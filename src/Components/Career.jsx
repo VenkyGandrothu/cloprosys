@@ -36,7 +36,7 @@ const positions = [
 function Career() {
   return (
     <div className="career-container">
-      <h2>Career Opportunities</h2>
+      <h2 className='carrer-heading'>Career Opportunities</h2>
       <div className="positions-list">
         {positions.map((position, index) => (
           <div key={index} className="position-card">

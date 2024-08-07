@@ -54,6 +54,9 @@
     .benifits-container {
       grid-template-columns: 1fr; /* Single column layout on very small screens */
     }
+    .benfits-heading{
+      font-size: 1.5rem;
+    }
   
     .benifits-img {
       height: 120px; /* Further adjust image height for very small screens */
