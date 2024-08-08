@@ -35,6 +35,10 @@
   max-height: 80vh; /* Limit the image height to 60% of the viewport height */
 }
 
+span{
+  color: #4b2e77;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .index-container {

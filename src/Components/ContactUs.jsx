@@ -1,47 +1,41 @@
-// src/components/ContactUs.js
-import React, { useState } from 'react';
-import '../Styles/ContactUs.css'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import '../Styles/ContactUs.css';
 
 function ContactUs() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
+  const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form data submitted:', formData);
-    setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-    });
+    setIsSubmitting(true);
+
+    emailjs.sendForm('service_pgi816h', 'template_xohspd7', form.current, 's86v30Cn9WW_X_zb6')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent successfully!');
+          setIsSubmitting(false);
+          form.current.reset(); // Reset the form after successful submission
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send the message, please try again.');
+          setIsSubmitting(false);
+        }
+      );
   };
 
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form ref={form} className="contact-form" onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             required
           />
         </div>
@@ -51,8 +45,6 @@ function ContactUs() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             required
           />
         </div>
@@ -62,8 +54,6 @@ function ContactUs() {
             type="tel"
             id="phone"
             name="phone"
-            value={formData.phone}
-            onChange={handleChange}
             required
           />
         </div>
@@ -72,12 +62,12 @@ function ContactUs() {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">Submit</button>
+        <button type="submit" className="submit-button" disabled={isSubmitting}>
+          {isSubmitting ? 'Sending...' : 'Send'}
+        </button>
       </form>
     </div>
   );

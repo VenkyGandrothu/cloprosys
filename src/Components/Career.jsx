@@ -8,27 +8,15 @@ const positions = [
     description: 'Responsible for designing, coding, and modifying websites, from layout to function according to a client\'s specifications.',
   },
   {
-    title: 'Java Developer',
-    description: 'Responsible for developing applications and software using the Java programming language.',
+    title: 'MobileApp Developer',
+    description: 'Responsible for developing applications and software using programming language.',
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer',
     description: 'Assist in the development, implementation, and management of software programs.',
   },
   {
-    title: 'Senior Software Engineer',
-    description: 'Lead the development of software projects, mentor junior engineers, and provide technical guidance.',
-  },
-  {
-    title: 'Salesforce developer',
-    description: 'Lead the development of software projects, mentor junior engineers, and provide technical guidance.',
-  },
-  {
     title: 'Human Resource',
-    description: 'Lead the development of software projects, mentor junior engineers, and provide technical guidance.',
-  },
-  {
-    title: 'Associative developer',
     description: 'Lead the development of software projects, mentor junior engineers, and provide technical guidance.',
   },
 ];
@@ -36,7 +24,7 @@ const positions = [
 function Career() {
   return (
     <div className="career-container">
-      <h2 className='carrer-heading'>Career Opportunities</h2>
+      <h2 className='carrer-heading'>Career <span>Opportunities</span></h2>
       <div className="positions-list">
         {positions.map((position, index) => (
           <div key={index} className="position-card">

@@ -1,24 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import Navbar from '../Components/Navbar'
-import CoursesList from "../Components/CoursesList";
-import Index from "../Components/Index";
 import Footer from "../Components/Footer";
-import Career from "../Components/Career";
-import AboutUs from "../Components/AboutUs";
-import ContactUs from "../Components/ContactUs";
-import Benifits from "../Components/Benifits";
-import Gallery from "../Components/Gallery";
-
+import LoadingSpinner from '../Components/LoadingSpinner';
 import '../Styles/Home.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
+const CoursesList = lazy(() => import("../Components/CoursesList"));
+const Index = lazy(() => import("../Components/Index"));
+const Career = lazy(() => import("../Components/Career"));
+const AboutUs = lazy(() => import("../Components/AboutUs"));
+const ContactUs = lazy(() => import("../Components/ContactUs"));
+const Benifits = lazy(() => import("../Components/Benifits"));
+const Gallery = lazy(() => import("../Components/Gallery"));
+
+
 function Home() {
     useEffect(() => {
       AOS.init({
-        duration: 2500,
+        duration: 1500,
         once: true,
       });
     }, []);
@@ -26,6 +28,7 @@ function Home() {
   return (
     <div className='Home'>
          <Navbar/>
+    <Suspense fallback={<LoadingSpinner />}>
       <div id="home">
         <Index />
       </div>
@@ -48,6 +51,7 @@ function Home() {
         <AboutUs />
       </div>
       <Footer/>
+      </Suspense>
     </div>
   )
 }

@@ -3,9 +3,9 @@ import '../Styles/CourseList.css'
 import salesforceImage from '../Images/salesforce.png';
 import aiImage from '../Images/Ai.jpg'
 import powerbiImage from '../Images/powerbi.jpg'
-import oracleImage from '../Images/oracle.png' 
-import awsImage from '../Images/aws.png'
-import devopsImage from '../Images/Devops.png'
+import oracleImage from '../Images/oracle.jpg' 
+import awsImage from '../Images/aws.jpg'
+import devopsImage from '../Images/devops.png'
 import pythonImage from '../Images/python.png'
 import webDesignImage from '../Images/webdev.jpg'
 

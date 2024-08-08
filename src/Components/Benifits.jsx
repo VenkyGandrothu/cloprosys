@@ -3,7 +3,7 @@ import Mocktest from '../Images/Mocktest.jpg';
 import project from '../Images/projects.png';
 import resume from '../Images/resumeprep.png';
 import jog from '../Images/jog.png';
-// import realtask from '../Images/realtaks.jpg';
+import realtask from '../Images/realtaks.jpg';
 import interview from '../Images/interview.jpg';
 import weekend from '../Images/Weekend.jpg'
 import '../Styles/Benifits.css'
@@ -25,10 +25,10 @@ function Benifits() {
   tittle:'Job Oriented Guidence',
   Image:jog
 },
-// {
-//   tittle:'Every Day Real Time Tasks',
-//   Image:realtask
-// },
+{
+  tittle:'Every Day Real Time Tasks',
+  Image:realtask
+},
 {
   tittle:'Interview etiquettes',
   Image:interview

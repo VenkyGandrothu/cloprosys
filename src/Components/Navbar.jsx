@@ -49,9 +49,6 @@ function Navbar() {
           <li className='navbar-item'>
             <Link to='about-us' spy={true} smooth={true} offset={-100} duration={500}>About Us</Link>
           </li>
-          <li className='navbar-item'>
-            <Link>Login</Link>
-          </li>
         </ul>
         </div>
       <div className='menu-icon' onClick={toggleMenu}>

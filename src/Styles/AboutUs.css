@@ -15,7 +15,7 @@
 .about-us-container h2 {
   font-size: 28px; /* Reduce font size for smaller screens */
   padding-left: 0; /* Remove left padding for smaller screens */
-  color: #4b2e77;
+  color: black;
   font-weight: 700;
   font-style: normal;
   text-align: center; /* Center align text on smaller screens */
@@ -42,7 +42,7 @@
 }
 
 span {
-  color: black;
+  color: #4b2e77;
 }
 
 /* Media Queries */
