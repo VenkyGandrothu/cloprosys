@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcloprosys=self.webpackChunkcloprosys||[]).push([[299],{9233:(s,e,c)=>{c.r(e),c.d(e,{default:()=>r});c(5043);const a=c.p+"static/media/centerimg.c58417a14329bd549f5d.jpg";var n=c(579);const r=function(){return(0,n.jsxs)("div",{className:"index-container",children:[(0,n.jsx)("img",{src:a,alt:"",className:"center-img"}),(0,n.jsxs)("h3",{children:[" Arise, awake, and stop not ",(0,n.jsx)("br",{})," ",(0,n.jsx)("span",{children:"until the goal is reached..."})]})]})}}}]);
+//# sourceMappingURL=299.93c1aeab.chunk.js.map
