@@ -22,7 +22,7 @@ function Benifits() {
     Image:resume
 },
 {
-  tittle:'Job Oriented Guidence',
+  tittle:'Job Oriented Guidance',
   Image:jog
 },
 {

@@ -1,8 +1,14 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../Styles/ContactUs.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function ContactUs() {
+
+
   const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -10,17 +16,33 @@ function ContactUs() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    emailjs.sendForm('service_pgi816h', 'template_xohspd7', form.current, 's86v30Cn9WW_X_zb6')
+    emailjs.sendForm('service_syvdorc', 'template_su4w9nl', form.current, '2LCo-vR3CJ2XwDOKM')
       .then(
         () => {
           console.log('SUCCESS!');
-          alert('Message sent successfully!');
+          toast.success('Message sent successfully!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
           setIsSubmitting(false);
           form.current.reset(); // Reset the form after successful submission
         },
         (error) => {
           console.log('FAILED...', error.text);
-          alert('Failed to send the message, please try again.');
+          toast.error('Failed to send the message, please try again.', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
           setIsSubmitting(false);
         }
       );
@@ -69,6 +91,7 @@ function ContactUs() {
           {isSubmitting ? 'Sending...' : 'Send'}
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 }

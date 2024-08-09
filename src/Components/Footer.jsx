@@ -4,6 +4,8 @@ import instagramIcon from '../Images/insta.png';
 import facebook from '../Images/fb.png';
 import linkedinIcon from '../Images/linkedin.png';
 import twitterIcon from '../Images/x.png';
+import yt from '../Images/yt.png'
+
 
 function Footer() {
   return (
@@ -26,18 +28,22 @@ function Footer() {
         <div className="footer-section social">
           <h4>Follow Us</h4>
           <div className="social-links">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/cloprosys/" target="_blank" rel="noopener noreferrer">
               <img src={facebook} alt="Facebook" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/cloprosys73756" target="_blank" rel="noopener noreferrer">
               <img src={twitterIcon} alt="Twitter" />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/cloprosys-it-solutions/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="LinkedIn" />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/cloprosys_it_solutions?utm_source=qr&igsh=MW9yY3E2ODhneXV6cQ==" target="_blank" rel="noopener noreferrer">
               <img src={instagramIcon} alt="Instagram" />
             </a>
+            <a href="https://www.youtube.com/@cloprosys" target="_blank" rel="noopener noreferrer">
+            <img src={yt} alt="Youtube" />
+            </a>
+
           </div>
         </div>
         <div className="footer-section contact">

@@ -51,6 +51,10 @@
   border-top: 1px solid #444;
 }
 
+.footer-bottom p{
+  font-size: 12px;
+}
+
 .social-links {
   display: flex;
   gap: 15px;
@@ -128,5 +132,12 @@
   .social-links img {
     width: 20px; /* Reduce social icon size */
     height: 20px;
+  }
+}
+
+@media (min-width: 1000px)
+{
+  .social-links{
+    margin-right: 70px;
   }
 }
