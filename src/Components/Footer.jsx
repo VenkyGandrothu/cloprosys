@@ -48,7 +48,7 @@ function Footer() {
         </div>
         <div className="footer-section contact">
           <h4>Contact Us</h4>
-          <p>Email: info@cloprosys.com</p>
+          <p>Email: <a href="mailto:info@cloprosys.com">info@cloprosys.com</a></p>
           <p>Phone: +91 7670970618</p>
         </div>
       </div>
