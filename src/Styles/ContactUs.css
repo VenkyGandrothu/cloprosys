@@ -42,6 +42,13 @@
     box-sizing: border-box;
   }
   
+  .error-message{
+    color: red;
+    font-size: 12px;
+  }
+
+
+
   .form-group textarea {
     height: 100px;
     resize: vertical;
@@ -103,3 +110,4 @@
       font-size: 12px;
     }
   }
+
