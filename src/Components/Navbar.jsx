@@ -1,9 +1,17 @@
 import React, { useState,useRef, useEffect } from 'react';
 import Logo from '../Images/Logo.jpeg';
 import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/Navbar.css';
 
 function Navbar() {
+
+  const visionnavigate = useNavigate(); 
+
+  const vision = () => {
+    visionnavigate('/vision');
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -48,6 +56,9 @@ function Navbar() {
           </li>
           <li className='navbar-item'>
             <Link to='about-us' spy={true} smooth={true} offset={-100} duration={500}>About Us</Link>
+          </li>
+          <li className='navbar-item' onClick={vision}>
+             <a>Our Vision</a>
           </li>
         </ul>
         </div>

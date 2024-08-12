@@ -30,6 +30,11 @@ function Career() {
           <div key={index} className="position-card">
             <h3 className="position-title">{position.title}</h3>
             <p className="position-description">{position.description}</p>
+            <div className='overlay'>
+            <div className='applybtn'>
+               <button>Apply</button>
+            </div>
+          </div>
           </div>
         ))}
       </div>

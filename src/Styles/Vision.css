@@ -1,0 +1,120 @@
+/* General container styling */
+.vision-container {
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Vision heading styling */
+  .vision-heading {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .vision-heading span {
+    color: #4b2e77; /* Highlighted text color */
+  }
+  
+
+  
+  
+  /* Vision images container */
+  .vision-images {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative; /* Positioning for absolute children */
+}
+
+  /* Vision text styling */
+  .vision-text {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .box {
+	border: none;
+	position: relative;
+	overflow: hidden;
+}
+.box img{
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.empdes{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+.empdes h4{
+    color: #4b2e77;
+	margin-bottom: 5px;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+
+
+  /* Responsive styles */
+  
+  /* Tablet view (768px and up) */
+  @media (min-width: 768px) {
+    .vision-images {
+      justify-content: space-between;
+    }
+  
+    .vision-text {
+      font-size: 1.1em;
+    }
+  }
+  
+  /* Laptop and desktop view (1024px and up) */
+  @media (min-width: 1024px) {
+
+    .vision-images {
+      flex-direction: row;
+      margin:0px 180px;
+    }
+  
+    .vision-images img {
+        width: 250px; /* Set width */
+        height: 250px; /* Set height */
+        object-fit: cover; /* Adjust image width */
+    }
+
+
+
+
+     
+  }
+  
+  /* Mobile view (below 768px) */
+  @media (max-width: 767px) {
+    .vision-images {
+      flex-direction: column;
+    }
+  
+    .vision-heading {
+      font-size: 2em;
+    }
+  
+    .vision-text {
+      font-size: 1em;
+    }
+
+    .vision-images img {
+        width: 250px; 
+        height: 300px; 
+        object-fit: cover; 
+        margin-left: 80px;
+    }
+
+    .empdes h4 { /* Adjust text placement on mobile */
+        font-size: 20px; /* Reduce font size for mobile */
+    }
+
+  }
+  

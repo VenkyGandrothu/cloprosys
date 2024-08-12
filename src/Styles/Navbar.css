@@ -98,13 +98,9 @@
       justify-content: space-between;
 
   }
-
-  
-
   .menu-icon {
       display: block;
   }
-
   .navitems.open {
       display: flex;
       flex-direction: column;
@@ -146,8 +142,13 @@
   .navbar-item a {
       display: block;
       width: 100%;
-      padding: 10px;
-  }
+      padding: 1;
+}
+
+.logo{
+  width: 70px;
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -201,4 +202,12 @@
   }
 
 
+}
+
+@media (max-width:380px) {
+
+  .logo{
+    width: 50px;
+  }
+  
 }
