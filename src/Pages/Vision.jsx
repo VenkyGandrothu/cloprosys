@@ -7,7 +7,7 @@ import Footer from '../Components/Footer';
 function Vision() {
   return (
     <div className="vision-container">
-      <h1 className="vision-heading">Vision of<span> our Fouders</span></h1>
+      <h1 className="vision-heading">Vision of<span> our Founders</span></h1>
       <div className="vision-images">
         <div className='box'>
         <img src={am} alt="Founder 1" />
