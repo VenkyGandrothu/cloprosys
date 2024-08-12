@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import LoadingSpinner from '../Components/LoadingSpinner';
 import '../Styles/Home.css'
 
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
