@@ -63,9 +63,11 @@ function Navbar() {
           </li>
         </ul>
         </div>
-        <div className='whlogo'>
-        <a href="https://api.whatsapp.com/send?phone=917670970618&text=Ping%20us%20for%20more%20Information%20"><img src={whlogo}/></a>
-      </div>
+        <div className='sociallogo'>
+        <a href="https://api.whatsapp.com/send?phone=917670970618&text=Ping%20us%20for%20more%20Information%20">
+        <img src={whlogo}/>
+        </a>
+        </div>
       <div className='menu-icon' onClick={toggleMenu}>
         <span>&#9776;</span>
       </div>

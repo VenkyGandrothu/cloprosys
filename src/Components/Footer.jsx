@@ -26,7 +26,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-section social">
-          <h4>Follow Us</h4>
+          <h4 className='followus'>Follow Us</h4>
           <div className="social-links">
             <a href="https://www.facebook.com/cloprosys/" target="_blank" rel="noopener noreferrer">
               <img src={facebook} alt="Facebook" />
