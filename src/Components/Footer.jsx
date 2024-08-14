@@ -20,9 +20,9 @@ function Footer() {
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#career">Careers</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#about-us">About Us</a></li>
           </ul>
         </div>
         <div className="footer-section social">
