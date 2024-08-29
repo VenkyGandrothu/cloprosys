@@ -104,6 +104,7 @@
     padding: 10px;
     width: 100%; /* Ensure each section takes full width */
   }
+  
 
   .footer-section p {
     font-size: 14px; /* Adjust font size */
@@ -132,6 +133,7 @@
     width: 20px; /* Reduce social icon size */
     height: 20px;
   }
+
 }
 
 @media (min-width: 1000px) {

@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Gallery2 from "./Pages/Gallery2";
 import Vision from "./Pages/Vision";
 import NotFound from "./Components/NotFound";
+import Services from "./Pages/Services";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/gallery2" element={<Gallery2/>}/>
         <Route path="/vision" element={<Vision/>}/>
+        <Route path="/services" element={<Services/>}/>
         <Route path="*" element={<NotFound />} /> {/* Catch-all 404 route */}
      </Routes>
      </Router>

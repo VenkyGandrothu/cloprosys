@@ -5,13 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import '../Styles/Navbar.css';
 import whlogo from '../Images/whatsapp.png'
 
+
 function Navbar() {
 
   const visionnavigate = useNavigate(); 
+  const servicenavigate = useNavigate();
 
   const vision = () => {
     visionnavigate('/vision');
   };
+
+  const services = () => {
+    servicenavigate('/services')
+  }
+
 
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
@@ -43,23 +50,26 @@ function Navbar() {
           <li className='navbar-item'>
             <Link to='home' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
           </li>
-          <li className='navbar-item'>
-            <Link to='courses' spy={true} smooth={true} offset={-100} duration={500}>Courses</Link>
-          </li>
-          <li className='navbar-item'>
-            <Link to='career' spy={true} smooth={true} offset={-100} duration={500}>Career</Link>
-          </li>
-          <li className='navbar-item'>
-            <Link to='contact-us' spy={true} smooth={true} offset={-100} duration={500}>Contact Us</Link>
-          </li>
-          <li className='navbar-item'>
-            <Link to='gallery' spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
+          <li className='navbar-item' onClick={services}>
+             <a>Services</a>
           </li>
           <li className='navbar-item'>
             <Link to='about-us' spy={true} smooth={true} offset={-100} duration={500}>About Us</Link>
           </li>
           <li className='navbar-item' onClick={vision}>
              <a>Our Vision</a>
+          </li>
+          <li className='navbar-item'>
+            <Link to='career' spy={true} smooth={true} offset={-100} duration={500}>Career</Link>
+          </li>
+          <li className='navbar-item'>
+            <Link to='courses' spy={true} smooth={true} offset={-100} duration={500}>Courses</Link>
+          </li>
+          <li className='navbar-item'>
+            <Link to='gallery' spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
+          </li>
+          <li className='navbar-item'>
+            <Link to='contact-us' spy={true} smooth={true} offset={-100} duration={500}>Contact Us</Link>
           </li>
         </ul>
         </div>

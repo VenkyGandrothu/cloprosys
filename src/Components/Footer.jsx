@@ -16,7 +16,7 @@ function Footer() {
           <p>Your gateway to mastering cutting-edge technology skills. Join us to advance your career with industry-leading training and resources.</p>
         </div>
         <div className="footer-section links">
-          <h4>Quick Links</h4>
+          <h4 >Quick Links</h4>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>

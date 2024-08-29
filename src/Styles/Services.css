@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styles */
+  .Servicecontainer {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Servicecontainer h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .Servicecontainer h1 span {
+    color: #4b2e77; /* Accent color for the span */
+    font-weight: bold;
+  }
+  
+  .Servicecontainer p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    max-width: 1030px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Service Section */
+  .ServiceSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ServiceSection:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ServiceImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .ServiceText {
+    text-align: center;
+  }
+  
+  .ServiceText h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .ServiceText p {
+    font-size: 0.8rem;
+    color: black;
+
+  }
+  
+  .ServiceText ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: black;
+    text-align: left;
+  }
+  
+  @media (min-width: 768px) {
+    .ServiceSection {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .ServiceImage {
+      max-width: 50%;
+      margin-right: 20px;
+    }
+  
+    .ServiceText {
+      max-width: 50%;
+    }
+  
+    .ServiceText p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .Servicecontainer {
+      padding: 60px;
+    }
+  
+    .Servicecontainer h1 {
+      font-size: 3.5rem;
+    }
+  
+    .ServiceSection {
+      padding: 30px;
+    }
+  
+    .ServiceImage {
+      max-width: 40%;
+    }
+  }
+  
