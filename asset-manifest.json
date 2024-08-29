@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.af332c19.css",
-    "main.js": "/static/js/main.720d0d92.js",
+    "main.css": "/static/css/main.383e50c6.css",
+    "main.js": "/static/js/main.4631d54e.js",
     "static/css/318.bdb004dc.chunk.css": "/static/css/318.bdb004dc.chunk.css",
     "static/js/318.3607881f.chunk.js": "/static/js/318.3607881f.chunk.js",
     "static/css/299.66ba42e3.chunk.css": "/static/css/299.66ba42e3.chunk.css",
@@ -37,6 +37,9 @@
     "static/media/vm.jfif": "/static/media/vm.53020be25c681cd5d83b.jfif",
     "static/media/inp5.jpg": "/static/media/inp5.f2bcece110b6e496e77b.jpg",
     "static/media/jog.png": "/static/media/jog.65db75ab6b9ca666532b.png",
+    "static/media/resume.jpg": "/static/media/resume.2aff6a91b165090b66e3.jpg",
+    "static/media/web.jpg": "/static/media/web.879744ac2c3ebfe25354.jpg",
+    "static/media/mobileapp.png": "/static/media/mobileapp.2052586cf0eb1749da7d.png",
     "static/media/devops.png": "/static/media/devops.10974e5964cf7e259ba3.png",
     "static/media/whatsapp.png": "/static/media/whatsapp.d026940870fb334920b7.png",
     "static/media/x.png": "/static/media/x.d74d7cef2155f5a3d688.png",
@@ -46,8 +49,8 @@
     "static/media/python.png": "/static/media/python.e9e7e3c189f46a597ded.png",
     "static/media/aws.jpg": "/static/media/aws.7abb631e1fe6ede02d52.jpg",
     "index.html": "/index.html",
-    "main.af332c19.css.map": "/static/css/main.af332c19.css.map",
-    "main.720d0d92.js.map": "/static/js/main.720d0d92.js.map",
+    "main.383e50c6.css.map": "/static/css/main.383e50c6.css.map",
+    "main.4631d54e.js.map": "/static/js/main.4631d54e.js.map",
     "318.bdb004dc.chunk.css.map": "/static/css/318.bdb004dc.chunk.css.map",
     "318.3607881f.chunk.js.map": "/static/js/318.3607881f.chunk.js.map",
     "299.66ba42e3.chunk.css.map": "/static/css/299.66ba42e3.chunk.css.map",
@@ -65,7 +68,7 @@
     "453.d432340c.chunk.js.map": "/static/js/453.d432340c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af332c19.css",
-    "static/js/main.720d0d92.js"
+    "static/css/main.383e50c6.css",
+    "static/js/main.4631d54e.js"
   ]
 }
