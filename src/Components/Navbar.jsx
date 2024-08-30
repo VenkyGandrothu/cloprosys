@@ -66,10 +66,10 @@ function Navbar() {
             <Link to='courses' spy={true} smooth={true} offset={-100} duration={500}>Courses</Link>
           </li>
           <li className='navbar-item'>
-            <Link to='gallery' spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
+            <Link to='contact-us' spy={true} smooth={true} offset={-100} duration={500}>Contact Us</Link>
           </li>
           <li className='navbar-item'>
-            <Link to='contact-us' spy={true} smooth={true} offset={-100} duration={500}>Contact Us</Link>
+            <Link to='gallery' spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
           </li>
         </ul>
         </div>

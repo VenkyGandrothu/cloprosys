@@ -7,6 +7,7 @@ import '../Styles/Home.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Chatbox from '../Components/Chatbox';
 
 
 const CoursesList = lazy(() => import("../Components/CoursesList"));
@@ -53,6 +54,7 @@ function Home() {
       </div>
       <Footer/>
       </Suspense>
+      <Chatbox />
     </div>
   )
 }
