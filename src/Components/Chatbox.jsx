@@ -32,6 +32,13 @@ function Chatbox() {
     {
       id: 'Waiting',
       user: true,
+      validator: (value) => {
+        // Validation for name: Only alphabetical characters
+        if (!/^[A-Za-z\s]+$/.test(value)) {
+          return 'Please enter a valid name without numbers or special characters.';
+        }
+        return true;
+      },
       trigger: 'Greetname',
     },
     {
@@ -40,29 +47,45 @@ function Chatbox() {
       trigger: 'Email',
     },
     {
-      id:'Email',
-      message:'Please enter your email',
-      trigger:'Emailwaiting'
+      id: 'Email',
+      message: 'Please enter your email',
+      trigger: 'Emailwaiting',
     },
     {
-      id:'Emailwaiting',
-      user:true,
-      trigger:'Phone'
+      id: 'Emailwaiting',
+      user: true,
+      validator: (value) => {
+        // Validation for email: Must follow standard email format
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(value)) {
+          return 'Please enter a valid email address.';
+        }
+        return true;
+      },
+      trigger: 'Phone',
     },
     {
-      id:'Phone',
-      message:'Please enter your phone number',
-      trigger:'Phonewaiting'
+      id: 'Phone',
+      message: 'Please enter your phone number',
+      trigger: 'Phonewaiting',
     },
     {
-      id:'Phonewaiting',
-      user:true,
-      trigger:'issuesenter'
+      id: 'Phonewaiting',
+      user: true,
+      validator: (value) => {
+        // Validation for phone: Only numeric characters, typically 10 digits
+        const phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(value)) {
+          return 'Please enter a valid 10-digit phone number without letters or special characters.';
+        }
+        return true;
+      },
+      trigger: 'issuesenter',
     },
     { 
-      id:'issuesenter',
-      message:'Let me know what do you want',
-      trigger:'issues'
+      id: 'issuesenter',
+      message: "How may I assist you? Please choose what you're interested in",
+      trigger: 'issues',
     },
     {
       id: 'issues',
@@ -70,14 +93,25 @@ function Chatbox() {
         {
           value: 'course',
           label: 'Course',
-          trigger: 'courses',
+          trigger: 'promptCourse',
         },
         {
           value: 'job',
           label: 'Job',
-          trigger: 'jobupdates',
+          trigger: 'promptJob',
         },
       ],
+    },
+    // Add prompt after selecting Course or Job
+    {
+      id: 'promptCourse',
+      message: 'Please select a course you are interested in:',
+      trigger: 'courses',
+    },
+    {
+      id: 'promptJob',
+      message: 'Please select a job you are interested in:',
+      trigger: 'jobupdates',
     },
     {
       id: 'jobupdates',
@@ -147,7 +181,8 @@ function Chatbox() {
         steps={steps} 
         floating={true} 
         botAvatar={botAvatar}  // Use the imported botAvatar
-        userAvatar={userAvatar} // Use the imported userAvatar
+        userAvatar={userAvatar}  // Use the imported userAvatar
+        scrollToBottom={true} // Ensures the chat scrolls to the bottom on new messages
       />
     </ThemeProvider>
   );
